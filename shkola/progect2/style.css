@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin-bottom: 20px;
+}
+p {
+    background-color: rgb(212, 196, 219);
+    margin-bottom: 40px;
+    margin-left: 20px;
+    padding-bottom: 40px;
+}
+a {
+    background-color: rgb(198, 181, 207);
+    margin-right: 40px;
+}

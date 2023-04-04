@@ -1,0 +1,21 @@
+h1 {
+    color: green;
+    font-size: 40px;
+}
+.post-1 {
+    background-color: burlywood;
+    padding: 30px;
+    border-radius: 10px;
+}
+.post-2 {
+    background-color: rgb(163, 127, 72);
+}
+h3 {
+    font-size: 28px;
+}
+img {
+    width: 700px;
+}
+a {
+    font-size: 24px;
+}

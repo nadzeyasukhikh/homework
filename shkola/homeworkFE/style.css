@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: rgb(32, 32, 59);
+    margin-bottom: 30px;
+    font-size: 60px;
+    margin-left: 150px;
+
+}
+.post-1 {
+    background-color: #34495E;
+    padding: 21px;
+    border-radius: 20px;
+    
+}
+.post-2 {
+    background-color: #34495E;
+    padding: 21px;
+    border-radius: 20px;
+}
+.post-3 {
+    background-color: #34495E;
+    padding: 21px;
+    border-radius: 20px;
+}
+h3 {
+    font-size: 30px;
+    color: antiquewhite;
+}
+img {
+    width: 450px;
+    margin-left: 250px;
+    padding: 19px;
+}
+a {
+    font-size: 30px;
+    color: rgb(223, 197, 216);
+}
+p {
+    color: cornsilk;
+}
