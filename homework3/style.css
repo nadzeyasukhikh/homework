@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+img {
+  width: 24px;
+  height: 24px;
+  margin: 16px 16px 0 16px;
+  
+  
+}
+section {
+  margin: 0 16px 16px 16px;
+  box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08), 0px 20px 32px rgba(96, 97, 112, 0.24);
+  border-radius: 20px;
+  width: 420px;
+  height: 426px;
+}
+.link-cross {
+  display: block;
+  text-align: right;
+}
+form {
+  margin: 0 32px 32px 32px;
+}
+h1 {
+  width: 356px;
+  height: 32px;
+  margin-bottom: 24px;
+  font-weight: 800;
+  font-family: Nunito;
+  color: #000000;
+  font-size: 28px;
+  line-height: 32px;
+}
+div {
+display: flex;
+flex-direction: column;
+gap: 8px;
+width: 356px;
+height: 96px;
+margin-bottom: 24px;
+}
+input[type="email"] {
+  height: 48px;
+  padding: 7px 0 0 16px;
+  font-weight: 400;
+  font-family: Nunito;
+  line-height: 20px;
+  font-size: 16px;
+  border: 1px solid #FFE44D;
+  border-radius: 12px;
+  caret-color: #FFE44D;
+}
+input[type="password"] {
+  height: 42px;
+  padding: 14px 0 14px 16px;
+  font-weight: 400;
+  font-family: Nunito;
+  line-height: 20px;
+  font-size: 16px;
+  border: 1px solid #CFD8DC;
+  border-radius: 12px;
+}
+p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #7B8E98;
+    margin-bottom: 24px;
+  }
+    button[type="submit"] {
+      height: 48px;
+      background: #FFE44D;
+      border-radius: 55px;
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 14px 97.5px;
+      border: none; 
+    }
+    button[type="input"] {
+      height: 48px;
+      border: 1px solid #CFD8DC;
+      border-radius: 87px;
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+    }                               
