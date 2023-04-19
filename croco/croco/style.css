@@ -123,3 +123,26 @@ h2 {
     padding-top: 252px;
     padding-left: 397px;
 }
+.servis {
+    height: 480px;
+    display: flex;
+}
+.servis-1, .servis-2, .servis-3 {
+    width: 480px;
+    padding-left: 70px;
+    padding-top: 126px;
+    font-size: 32px;
+line-height: 34px;
+letter-spacing: -0.006em;
+color: #FFFFFF;
+text-decoration: none;
+}
+.servis-1 {
+    background: #22356F;
+}
+.servis-2 {
+    background: #0052C1;
+}
+.servis-3 {
+    background: #76B58B;
+}
