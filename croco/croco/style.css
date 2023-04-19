@@ -152,7 +152,7 @@ h2 {
     border-bottom: 2px;
     color: #FFFFFF;
 }
-footer {
+.procat-list {
     height: 800px;
     display: flex;
 }
@@ -167,9 +167,9 @@ h5 {
 }
 .procat-text-1 {
     width: 676px;
-height: 215px;
-font-size: 36px;
-color: #22356F;
-padding-top: 49px;
-padding-left: 67px;
+    height: 215px;
+    font-size: 36px;
+    color: #22356F;
+    padding-top: 49px;
+    padding-left: 67px;
 }
