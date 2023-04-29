@@ -22,16 +22,7 @@ function getArrey(number1, number2) {
    }
   getArrey(80, 90);
 
-//  function printEvenNumbersDescending(num1, num2) {
-//   let start = Math.max(num1, num2);
-//   let end = Math.min(num1, num2);
 
-//   for (let i = start; i >= end; i--) {
-//     if (i % 2 == 0) {
-//       console.log(i);
-//     }
-//   }
-// }
 
 // Напишите функцию power, которая принимает два числовых аргумента
 // (основание степени и саму степень) и возвращает число в указанной степени.
