@@ -55,7 +55,7 @@ const body = document.querySelector("body")
 for (let i = 0; i < users.length; i++) {
     if (users[i].age >= 18) {
         body.innerHTML += `<div class="users_container">
-        <p>${users[i].first_name} ${users[i].last_name} ${users[i].age}</p>
+        <p>${users[i].first_name} ${users[i].last_name}, Возраст: ${users[i].age} </p>
         </div>` 
     }
  }
