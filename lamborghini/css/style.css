@@ -53,6 +53,7 @@ body {
 .menu-link {
   color: #363636;
   font-size: 16px;
+  
 }
 .promo {
   background-image: url(../images/promo.gp.png);
@@ -74,6 +75,7 @@ body {
   font-size: 76px;
   letter-spacing: 0.08em;
   margin-bottom: 10px;
+  margin-left: 18px;
 }
 .subtitle {
   font-family: "Impact", sans-serif;
