@@ -1,56 +1,55 @@
-const count_score = document.querySelector("#count_score");
-const area = document.querySelector("#area");
-let score = 0;
-let object = document.querySelector("#object");
-const hit_suond = new Audio("songs/hit.wav");
-const miss_suond = new Audio("songs/miss.wav");
-const game_over_suond = new Audio("songs/game_over.wav");
+const count_score = document.querySelector("#count_score"); // Ищем объект счетчик
+const area = document.querySelector("#area"); // Ищем объект игровое поле
+const gameOver = document.querySelector(".game-over"); // Ищем текст  КОНЕЦ ИГРЫ!
 
- function start_game() { 
+let score = 0; // очки
+let object = document.querySelector("#object"); // Ищем объект Снежок
+const hit_sound = new Audio("songs/hit.wav"); // Звук
+const miss_sound = new Audio("songs/miss.wav"); // Звук
+
+// Старт
+
+function start_game() {
+  area.classList.remove("finish");
   object.classList.toggle("start");
-   score = 0;
-   count_score.innerText = `0`;
-   
-  
- }
-
-
- function finish_game() {
-  area.innerHTML = `<p>${"КОНЕЦ ИГРЫ"}</p>`
-   object.classList.remove('start');
-   game_over_suond.currentTime = 0;
-   game_over_suond.play();
- 
-
-
-
-   start_game();
-  
- }
-
-
-function miss(event) {
-  if (event.target.id == "area") {
-    
-     score--;
-     count_score.innerText = `${score}`;
-     if(score <= 0) {
-      finish_game()
-     
-     }
-  }
+  gameOver.style.display = "none";
+  score = 0; // обнуление очков
+  count_score.innerText = `0`;
 }
 
 function hit() {
+  // действие при попадании
   score++;
-  count_score.innerText =  `${score}`;
+  count_score.innerText = `${score}`; // Счётчик очков
+
   object.classList.remove("start");
-  void object.offsetWidth;
+  void object.offsetWidth; // перекомпоновка DOM (API)
   object.classList.add("start");
 
-  let random_offset = Math.random() * 340;
+  // Случайное появление снежка
+  let random_offset = Math.floor(Math.random() * 400);
   object.style.left = `${random_offset}px`;
-  hit_suond.currentTime = 0;
-  hit_suond.play();
+
+  hit_sound.currentTime = 0; // Звук
+  hit_sound.play(); // Звук
 }
 
+function miss(event) {
+  // действие при промахивании
+  if (event.target.id == "area" || event.target.id == "wrapper-game-over") {
+    score--;
+    count_score.innerText = `${score}`;
+    if (score < 0) {
+      finish_game();
+    }
+    miss_sound.currentTime = 0; // Звук
+    miss_sound.play(); // Звук
+  }
+}
+
+function finish_game() {
+  const gameOver = document.querySelector(".game-over");
+  object.classList.remove("start");
+  count_score.innerText = `0`;
+  gameOver.style.display = "block";
+}
