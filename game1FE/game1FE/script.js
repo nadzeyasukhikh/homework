@@ -48,7 +48,6 @@ function miss(event) {
 }
 
 function finish_game() {
-  const gameOver = document.querySelector(".game-over");
   object.classList.remove("start");
   count_score.innerText = `0`;
   gameOver.style.display = "block";
