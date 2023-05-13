@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(10, 9, 66); /* Фон */
+}
+
+h1 {
+  color: rgb(205, 240, 11);
+  text-align: center;
+  font-size: 32px;
+  margin: 50px auto;
+  -moz-text-shadow: 0 0 40px rgb(226, 223, 42);
+  -webkit-text-shadow: 0 0 40px rgb(208, 233, 24);
+  text-shadow: 0 0 40px rgb(243, 229, 73);
+}
+
+h4 {
+  color: rgb(193, 230, 109);
+  text-align: center;
+  margin: 8px;
+  border-radius: 12px;
+  -moz-box-shadow: 0 0 20px #e8f5de;
+  -webkit-box-shadow: 0 0 20px #edf1e8;
+  box-shadow: 0 0 20px #f4f7f1;
+  padding: 12px;
+}
+
+.score {
+  font-size: 26px;
+  margin: 0 25px;
+}
+
+#count_score {
+  color: rgb(193, 230, 109);
+}
+
+header {
+  width: 70%;
+  margin: auto;
+  height: 45px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btm {
+  margin: 0 25px;
+  padding: 8px 28px;
+  font-weight: 600;
+  color: rgb(193, 230, 109);
+  font-size: 26px;
+  padding: 12px;
+  background-color: rgb(10, 9, 66);
+  -moz-box-shadow: 0 0 20px #e8f5de;
+  -webkit-box-shadow: 0 0 20px #edf1e8;
+  box-shadow: 0 0 20px #f4f7f1;
+  padding: 10px;
+  border-radius: 12px;
+  width: 120px;
+}
+
+/* Игровое поле */
+.area {
+  width: 500px;
+  aspect-ratio: 1;
+  margin: 20px auto;
+  background-image: url(./images/img2.jpg);
+  background-position: center;
+  border-radius: 12px;
+  -moz-box-shadow: 0 0 40px #e8f5de;
+  -webkit-box-shadow: 0 0 40px #edf1e8;
+  box-shadow: 0 0 40px #f4f7f1;
+  overflow: hidden;
+  /* display: none; */
+}
+
+/* Луна */
+#object {
+  width: 80px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-image: url(./images/snow.jpg);
+  background-size: 100px 100px;
+  transform: translateY(-100px);
+  position: relative;
+}
+
+#object.start {
+  animation-name: movement;
+  animation-duration: 3s; /*  плавное анимация */
+  animation-iteration-count: infinite; /* бесклнечная анимация */
+  animation-timing-function: linear; /*  плавное анимация */
+}
+
+/* анимация движения */
+@keyframes movement {
+  to {
+    transform: translateY(600px);
+    width: 70px;
+    background-size: 70px 70px;
+  }
+}
+
+/* Game Over */
+.wrapper-game-over {
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+.game-over {
+  display: none;
+  margin: auto;
+  width: 250px;
+  padding: 8px;
+}
+
+.game-over-text {
+  text-align: center;
+  color: rgb(219, 216, 14);
+  font-size: 25px;
+  font-weight: 700;
+  -moz-text-shadow: 0 0 40px rgb(226, 223, 42);
+  -webkit-text-shadow: 0 0 40px rgb(208, 233, 24);
+  text-shadow: 0 0 40px rgb(243, 229, 73);
+}
